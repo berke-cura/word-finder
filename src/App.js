@@ -1,25 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import {
+  Route,
+  NavLink,
+  HashRouter,
+  Routes,
+  Switch
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+} from "react-router-dom";
+import "./index.css";
+
+import Home from "./home";
+import Stuff from "./stuff";
+import Contact from "./contact";
+
+class Main extends Component {
+  render() {
+    return (
+      <HashRouter>
+        <div>
+          
+      
+          <h1>Simple SPA</h1>
+          <ul className="header">
+          <li><NavLink to="/">Home</NavLink></li>
+            <li><NavLink to="/stuff">Stuff</NavLink></li>
+            <li><NavLink to="/contact">Contact</NavLink></li>
+          </ul>
+          <div>
+       
+      </div>
+          <div className="content">
+          
+  
+          <Routes>
+          <Route path="/" element={<Home/>}></Route>
+            <Route path="/stuff" element={<Stuff/>}></Route>
+            <Route path="/contact" element={<Contact/>}></Route>
+
+
+            </Routes>
+      
+
+          </div>
+        </div>
+        </HashRouter>
+    );
+  }
 }
 
-export default App;
+export default Main; 
