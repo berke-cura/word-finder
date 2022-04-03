@@ -12,18 +12,19 @@ import Home from "./home";
 import Stuff from "./stuff";
 import Contact from "./contact";
 
+
+
 class Main extends Component {
   render() {
     return (
       <HashRouter>
         <div>                
-          <h1>Word Finder</h1>
+          <h1>WORD FINDER</h1>
           <ul className="header">
           <li><NavLink to="/">Home</NavLink></li>
           <li><NavLink to="/stuff">Stuff</NavLink></li>
           <li><NavLink to="/contact">Contact</NavLink></li>
           </ul>
-          <div>       
       </div>
           <div className="content">            
           <Routes>
@@ -32,10 +33,9 @@ class Main extends Component {
             <Route path="/contact" element={<Contact/>}></Route>
           </Routes>      
           </div>
-        </div>
         </HashRouter>
     );
   }
 }
 
-export default Main; 
+export default Main;

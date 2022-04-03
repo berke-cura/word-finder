@@ -1,48 +1,26 @@
-import React, { Component } from "react";
-import Box from '@mui/material/Box';
-
-import { TextField } from '@material-ui/core';
-import { Button } from '@material-ui/core';
+import React, { Component }  from "react";
 
 
-
- 
 class Home extends Component {
-    
+  constructor(props) {
+    super(props);
+  }
   render() {
     return (
-      <div>
-        <h2>HELLO</h2>
-        <Box
-      component="form"
-      sx={{
-        '& .MuiTextField-root': { m: 1, width: '25ch' },
-      }}
-      noValidate
-      autoComplete="off"
-    >
-      <div>
-        <TextField inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }} id="filled-basic" label="Letter Count" margin="normal" variant="outlined"/>
-    
-        <TextField id="filled-basic" label="Existing Letters" variant="outlined"/>
-        <TextField id="filled-basic" label="Not Existing Letters" variant="outlined"/>
-        <TextField id="filled-basic" label="Letter Count" variant="outlined"/>
-        <Button variant="outlined">Submit</Button>
-
+      <div className="create">
         
+          <form onSubmit={this.handleSubmit}>
+      <fieldset className="berfin">
+         <label>LETTER COUNT<input type="text"  name="Letter Count" /></label>
+         <label>EXISTING LETTERS<input type="text"  name="Existing Letters" /></label>
+         <label>NOT EXISTING LETTERS<input type="text"  name="Not Existing Letters" /></label>
+         <label>LETTER AND PLACE<input type="text"  name="Letter and Place" /></label>
+       </fieldset>
+       <button type="submit">SEARCH</button>
+      </form>
       </div>
-     
-    </Box>
-
-
-       
-      </div>
-      
-      
     );
-    
   }
-  
 }
  
 export default Home;

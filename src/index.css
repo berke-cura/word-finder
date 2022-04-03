@@ -3,17 +3,29 @@ body {
   padding: 20px;
   margin: 0;
 }
-h1, h2, p, ul, li {
+
+h1 {
+  text-align: center;
   font-family: sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+
+}
+
+h2, p, ul, li {
+  font-family: sans-serif;
+
 }
 ul.header li {
   display: inline;
   list-style-type: none;
   margin: 0;
+
 }
 ul.header {
   background-color: #111;
   padding: 0;
+
 }
 ul.header li a {
   color: #FFF;
@@ -21,15 +33,90 @@ ul.header li a {
   text-decoration: none;
   padding: 20px;
   display: inline-block;
+
+  
 }
 .content {
   background-color: #FFF;
   padding: 20px;
+  align-items: center;
+
+
 }
 .content h2 {
   padding: 0;
   margin: 0;
+  align-items: center;
+
+  
 }
 .content li {
   margin-bottom: 10px;
+  align-items: center;
+
+  
+}
+.active {
+  background-color: #0099FF;
+}
+
+.wrapper {
+  padding: 5px 20px;
+  border: 0;
+}
+
+.wrapper fieldset {
+  margin: 20px 0;
+  border:0;
+}
+
+.create {
+  max-width: 400px;
+  margin: 0 left;
+  text-align: left;
+  align-items: left;
+}
+
+.create label{
+  text-align: left;
+  display: block;
+  font-weight:bold;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+.create h2{
+  font-size: 20px;
+  color: #111;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.create input, .create textarea, .create select {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border: 10px solid #FFCC00;
+  box-sizing: border-box;
+  display: block;
+  font-size: 17px;
+}
+
+.create button {
+  background: #FFCC00;
+  border: 0;
+  padding: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+
+
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 360px;
+}
+
+.berfin {
+  border: 0;
+  font-size: 25px;
 }
