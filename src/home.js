@@ -10,7 +10,7 @@ class Home extends Component {
       <div className="create">
         
           <form onSubmit={this.handleSubmit}>
-      <fieldset className="berfin">
+      <fieldset className="field">
          <label>LETTER COUNT<input type="text"  name="Letter Count" /></label>
          <label>EXISTING LETTERS<input type="text"  name="Existing Letters" /></label>
          <label>NOT EXISTING LETTERS<input type="text"  name="Not Existing Letters" /></label>

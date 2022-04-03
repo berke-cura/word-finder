@@ -1,8 +1,9 @@
 import { useForm } from 'react-hook-form';
 // import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
-import {send} from 'emailjs-com'
-import { TextField, Box,  Button } from '@material-ui/core';
+import {send} from '@emailjs/browser'
+//  import { TextField, Box,  Button } from '@material-ui/core';
+import '/Users/berke/reactFrontEnd/word-finder/'
 
 const ContactForm = () => {
   const {
@@ -39,6 +40,7 @@ const ContactForm = () => {
         <div className='row'>
           <div className='col-12 text-center'>
             <div className='contactForm' style={{}}>
+            <form onSubmit={this.handleSubmit}>
             <Box component="span" sx={{ p: 2, border: '1px dashed grey' }}>
               <form id='contact-form' onSubmit={handleSubmit(onSubmit)} noValidate>
                 {/* Row 1 of form */}
@@ -109,6 +111,7 @@ const ContactForm = () => {
                
               </form>
               </Box>
+            </form>
             </div>
           </div>
         </div>

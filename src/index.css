@@ -56,8 +56,9 @@ ul.header li a {
 
   
 }
+
 .active {
-  background-color: #0099FF;
+  background-color: #c79c00 ;
 }
 
 .wrapper {
@@ -72,12 +73,14 @@ ul.header li a {
 
 .create {
   max-width: 400px;
+  padding: 20px;
   margin: 0 left;
   text-align: left;
   align-items: left;
 }
 
 .create label{
+  padding: 10px;
   text-align: left;
   display: block;
   font-weight:bold;
@@ -111,12 +114,162 @@ ul.header li a {
   font-weight: bold;
 
 
-  margin-top: 20px;
+  margin-top: 0px;
   margin-left: 20px;
-  width: 360px;
+  width: auto;
 }
 
-.berfin {
+.field {
   border: 0;
   font-size: 25px;
+}
+
+.grid-container {
+  display: grid;
+  gap: 0px;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.grid-item {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.item1 label {
+  text-align: left;
+  display: block;
+  font-weight:bold;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+.item1 h2{
+  font-size: 20px;
+  color: #111;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.item1 input, .contact textarea, .contact select {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border: 10px solid #FFCC00;
+  box-sizing: border-box;
+  display: block;
+  font-size: 17px;
+}
+
+.item2 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.item2 label {
+  text-align: left;
+  display: block;
+  font-weight:bold;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+.item2 h2{
+  font-size: 20px;
+  color: #111;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.item2 input, .contact textarea, .contact select {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border: 10px solid #FFCC00;
+  box-sizing: border-box;
+  display: block;
+  font-size: 17px;
+}
+
+.item3 {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.item3 label {
+  text-align: left;
+  display: block;
+  font-weight:bold;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+.item3 h2{
+  font-size: 20px;
+  color: #111;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.item3 input, .contact textarea, .contact select {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border: 10px solid #FFCC00;
+  box-sizing: border-box;
+  display: block;
+  font-size: 17px;
+}
+
+.item4 {
+  grid-column: 2;
+  grid-row: 1/4;
+}
+
+.item4 label {
+  text-align: left;
+  display: block;
+  font-weight:bold;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+.item4 h2{
+  font-size: 20px;
+  color: #111;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.item4 input, .contact textarea, .contact select {
+  width: 100%;
+  height: auto;
+  min-height:350px;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border: 10px solid #FFCC00;
+  box-sizing: border-box;
+  display: block;
+  font-size: 17px;
+}
+
+.grid-container button{
+  background: #FFCC00;
+  border: 0;
+  padding: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+
+
+  margin-top: 0px;
+  margin-left: 20px;
+  margin-right: auto;
+  width: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .item4 {
+    grid-column: 1;
+    grid-row: 4;
+  }
 }
