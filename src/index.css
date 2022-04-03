@@ -228,13 +228,6 @@ ul.header li a {
   grid-row: 1/4;
 }
 
-.item4 label {
-  text-align: left;
-  display: block;
-  font-weight:bold;
-  font-family: sans-serif;
-  font-size: 15px;
-}
 .item4 h2{
   font-size: 20px;
   color: #111;
@@ -267,6 +260,21 @@ ul.header li a {
   margin-left: 20px;
   margin-right: auto;
   width: auto;
+}
+
+.grid-container textarea{
+  grid-column: 2;
+  grid-row: 2/4;
+  width:80%;
+  height: 100%;
+  border:10px solid #9ccc65;
+  font-size: 20px;
+  padding: 15px;
+  font-weight: bolder;
+  background-color: #ffffff;
+  margin: auto;
+  flex: auto;
+  line-height: 1.5em;
 }
 
 
@@ -393,7 +401,7 @@ ul.header li a {
   margin-bottom: 20px;
   text-align: left;
 }
-.item4A input, .contact textarea, .contact select {
+.item4A input, .item4A textarea, .item4A select {
   width: 100%;
   padding: 10px 15px;
   margin: 10px 0;
@@ -401,37 +409,6 @@ ul.header li a {
   box-sizing: border-box;
   display: block;
   font-size: 17px;
-}
-
-.item5A {
-  grid-column: 2;
-  grid-row: 1/4;
-}
-
-.item5A label {
-  text-align: left;
-  display: block;
-  font-weight:bold;
-  font-family: sans-serif;
-  font-size: 15px;
-}
-.item5A h2{
-  font-size: 20px;
-  color: #111;
-  margin-bottom: 20px;
-  text-align: left;
-}
-.item5A input, .item4 textarea, .item4 select {
-  width: 100%;
-  height: auto;
-  min-height:350px;
-  padding: 10px 15px;
-  margin: 10px 0;
-  border: 10px solid #FFCC00;
-  box-sizing: border-box;
-  display: block;
-  font-size: 17px;
-  align-items: flex-start;
 }
 
 .grid-containerA button{
@@ -446,4 +423,27 @@ ul.header li a {
   margin-left: 20px;
   margin-right: auto;
   width: auto;
+}
+
+.grid-containerA h1 {
+  grid-column: 2;
+  grid-row: 1;
+  font-size: 30px;
+  background-color: #9ccc65;
+  margin: auto;
+  flex: auto;
+}
+.grid-containerA textarea {
+  grid-column: 2;
+  grid-row: 2/4;
+  width:80%;
+  height: 100%;
+  border:10px solid #9ccc65;
+  font-size: 20px;
+  padding: 15px;
+  font-weight: bolder;
+  background-color: #ffffff;
+  margin: auto;
+  flex: auto;
+  line-height: 1.5em;
 }
