@@ -1,4 +1,4 @@
-import React, { Component, useState }  from "react";
+import React, { Component }  from "react";
 import axios from "axios"
 
 
@@ -40,7 +40,7 @@ click() {
   render() {
     return (
       <div className="create">
-      <fieldset className="berfin">
+      <fieldset className="field">
          <label>LETTER COUNT<input type="text"  
                                     name="Letter Count"
                                     onChange={(e) => this.setState({ letterCount: e.target.value })}/>
@@ -57,9 +57,10 @@ click() {
                                     name="Letter And Place"
                                     onChange={(e) => this.setState({ letterPlace: [{ letter: e.target.value.split(',')[0], place: e.target.value.split(',')[1]} ] })}/>
         </label>
+        <button type="submit" onClick={this.click}>SEARCH</button>
+
        </fieldset>
-       <button type="submit" onClick={this.click}>SEARCH</button>
-      <label>{JSON.stringify(this.state.words)}</label>
+      <label class='responseWords'>{JSON.stringify(this.state.words)}</label>
       </div>
     );
   }

@@ -115,13 +115,14 @@ ul.header li a {
 
 
   margin-top: 0px;
-  margin-left: 20px;
+  margin-left: 10px;
   width: auto;
 }
 
 .field {
   border: 0;
   font-size: 25px;
+  display:inline;
 }
 
 .grid-container {
@@ -240,7 +241,7 @@ ul.header li a {
   margin-bottom: 20px;
   text-align: left;
 }
-.item4 input, .contact textarea, .contact select {
+.item4 input, .item4 textarea, .item4 select {
   width: 100%;
   height: auto;
   min-height:350px;
@@ -250,6 +251,7 @@ ul.header li a {
   box-sizing: border-box;
   display: block;
   font-size: 17px;
+  align-items: flex-start;
 }
 
 .grid-container button{
@@ -267,9 +269,181 @@ ul.header li a {
   width: auto;
 }
 
+
 @media only screen and (max-width: 768px) {
   .item4 {
     grid-column: 1;
     grid-row: 4;
   }
+}
+
+.grid-containerA {
+  display: grid;
+  gap: 0px;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.grid-item {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.item1A {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.item1A label {
+  text-align: left;
+  display: block;
+  font-weight:bold;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+.item1A h2{
+  font-size: 20px;
+  color: #111;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.item1A input, .contact textarea, .contact select {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border: 10px solid #FFCC00;
+  box-sizing: border-box;
+  display: block;
+  font-size: 17px;
+}
+
+.item2A {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.item2A label {
+  text-align: left;
+  display: block;
+  font-weight:bold;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+.item2A h2{
+  font-size: 20px;
+  color: #111;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.item2A input, .contact textarea, .contact select {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border: 10px solid #FFCC00;
+  box-sizing: border-box;
+  display: block;
+  font-size: 17px;
+}
+
+.item3A {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.item3A label {
+  text-align: left;
+  display: block;
+  font-weight:bold;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+.item3A h2{
+  font-size: 20px;
+  color: #111;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.item3A input, .contact textarea, .contact select {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border: 10px solid #FFCC00;
+  box-sizing: border-box;
+  display: block;
+  font-size: 17px;
+}
+
+.item4A {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.item4A label {
+  text-align: left;
+  display: block;
+  font-weight:bold;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+.item4A h2{
+  font-size: 20px;
+  color: #111;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.item4A input, .contact textarea, .contact select {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border: 10px solid #FFCC00;
+  box-sizing: border-box;
+  display: block;
+  font-size: 17px;
+}
+
+.item5A {
+  grid-column: 2;
+  grid-row: 1/4;
+}
+
+.item5A label {
+  text-align: left;
+  display: block;
+  font-weight:bold;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+.item5A h2{
+  font-size: 20px;
+  color: #111;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.item5A input, .item4 textarea, .item4 select {
+  width: 100%;
+  height: auto;
+  min-height:350px;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border: 10px solid #FFCC00;
+  box-sizing: border-box;
+  display: block;
+  font-size: 17px;
+  align-items: flex-start;
+}
+
+.grid-containerA button{
+  grid-column: 1;
+  background: #FFCC00;
+  border: 0;
+  padding: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-left: 20px;
+  margin-right: auto;
+  width: auto;
 }
