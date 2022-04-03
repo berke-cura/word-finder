@@ -432,6 +432,12 @@ ul.header li a {
   background-color: #9ccc65;
   margin: auto;
   flex: auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 55px;
+  padding-right: 55px;
+  border-radius: 5px;
+  color: white
 }
 .grid-containerA textarea {
   grid-column: 2;
