@@ -43,7 +43,7 @@ const Contact = () => {
         <div className="grid-item item1"><label>NAME<input type="text" name="Name" onChange={(e) => setName(e.target.value)}/></label></div>
         <div className="grid-item item2"><label>EMAIL<input type="text" name="Email" onChange={(e) => setEmail(e.target.value)}/></label></div>
         <div className="grid-item item3"><label>SUBJECT<input type="text" name="Subject" onChange={(e) => setSubject(e.target.value)}/></label></div>
-        <div className="grid-item item4"><label>MESSAGE<input type="text" name="Message" onChange={(e) => setMessage(e.target.value)}/></label></div>
+       <textarea value="Type your message here.">MESSAGE<input type="text" name="Subject" onChange={(e) => setMessage(e.target.value)}/></textarea>
         <button type="submit" onClick={click} >SEND</button>
         <Modal show={isSubmit} hide={setIsSubmit}></Modal>
       </div>

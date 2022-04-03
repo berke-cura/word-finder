@@ -14,7 +14,7 @@ class Home extends Component {
                 <div className="grid-item item3A"><label>NOT EXISTING LETTERS<input type="text"  name="Not Existing Letters"/></label></div>  
                 <div className="grid-item item4A"><label>LETTER AND PLACE<input type="text"  name="Letter and Place"/></label></div>
                 <h1>RESULTS</h1>
-                <textarea disabled={true} >{result}</textarea>
+                <textarea disabled={true} defaultValue={result}></textarea>
                 <button type="submit">SEARCH</button>
             </div>
 
